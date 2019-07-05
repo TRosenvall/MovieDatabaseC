@@ -8,6 +8,7 @@
 
 #import "TRMovie.h"
 
+// Coding Keys
 static NSString * const titleKey = @"title";
 static NSString * const ratingKey = @"rating";
 static NSString * const overviewKey = @"overview";
@@ -31,7 +32,8 @@ static NSString * const overviewKey = @"overview";
 
 @implementation TRMovie (JSONConvertable)
 
--(instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary
+// Initialize a movie with a dictionary.
+- (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary
 {
     NSString *title = dictionary[titleKey];
     NSString *rating = dictionary[ratingKey];
