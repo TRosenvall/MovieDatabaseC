@@ -10,13 +10,13 @@
 
 // Coding Keys
 static NSString * const titleKey = @"title";
-static NSString * const ratingKey = @"rating";
+static NSString * const ratingKey = @"vote_average";
 static NSString * const overviewKey = @"overview";
 
 @implementation TRMovie
 
 // Initialize a movie with a title, rating, and overview.
-- (instancetype)initWithTitle:(NSString *)title rating:(NSString *)rating overview:(NSString *)overview
+- (instancetype)initWithTitle:(NSString *)title rating:(NSNumber *)rating overview:(NSString *)overview
 {
     self = [super init];
     if (self)
@@ -35,10 +35,11 @@ static NSString * const overviewKey = @"overview";
 // Initialize a movie with a dictionary.
 - (instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary
 {
+    // Pulling the properties of each movie from the passed in dictionary
     NSString *title = dictionary[titleKey];
-    NSString *rating = dictionary[ratingKey];
+    NSNumber *rating = dictionary[ratingKey];
     NSString *overview = dictionary[overviewKey];
-    
+    // Return a movie.
     return [self initWithTitle:title rating:rating overview:overview];
 }
 

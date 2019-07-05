@@ -15,6 +15,7 @@
 		857921FB22CF9FEB0044B2C8 /* MovieDatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857921FA22CF9FEB0044B2C8 /* MovieDatabaseViewController.swift */; };
 		8579220222CFA21E0044B2C8 /* TRMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 8579220122CFA21E0044B2C8 /* TRMovie.m */; };
 		8579220522CFA6520044B2C8 /* TRNetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8579220422CFA6520044B2C8 /* TRNetworkController.m */; };
+		8579220722CFB4F40044B2C8 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8579220622CFB4F40044B2C8 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8579220122CFA21E0044B2C8 /* TRMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRMovie.m; sourceTree = "<group>"; };
 		8579220322CFA6520044B2C8 /* TRNetworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRNetworkController.h; sourceTree = "<group>"; };
 		8579220422CFA6520044B2C8 /* TRNetworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRNetworkController.m; sourceTree = "<group>"; };
+		8579220622CFB4F40044B2C8 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				857921FA22CF9FEB0044B2C8 /* MovieDatabaseViewController.swift */,
+				8579220622CFB4F40044B2C8 /* MovieTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				8579220522CFA6520044B2C8 /* TRNetworkController.m in Sources */,
 				8579220222CFA21E0044B2C8 /* TRMovie.m in Sources */,
+				8579220722CFB4F40044B2C8 /* MovieTableViewCell.swift in Sources */,
 				857921EA22CF9F210044B2C8 /* main.m in Sources */,
 				857921DC22CF9F200044B2C8 /* AppDelegate.m in Sources */,
 				857921FB22CF9FEB0044B2C8 /* MovieDatabaseViewController.swift in Sources */,

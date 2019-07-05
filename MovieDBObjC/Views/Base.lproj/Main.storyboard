@@ -21,9 +21,17 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cbd-0d-P7m">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="eji-J2-IxA">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="BYZ-38-t0r" id="89u-yR-ivj"/>
+                                    </connections>
+                                </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="199" id="r6x-AX-Tyr">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="199"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="199" id="r6x-AX-Tyr" customClass="MovieTableViewCell" customModule="MovieDBObjC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="414" height="199"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r6x-AX-Tyr" id="pCT-v6-uzN">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="198.5"/>
@@ -57,6 +65,9 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="178.5" id="WK3-3o-Ccn"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
@@ -66,8 +77,17 @@
                                                 <constraint firstAttribute="bottom" secondItem="W1L-Tl-7xf" secondAttribute="bottom" constant="10" id="r2S-8w-Mcb"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="overviewLabel" destination="zGM-z1-bbf" id="Lyf-eh-qT8"/>
+                                            <outlet property="ratingLabel" destination="ebF-6R-ERM" id="Owk-jb-XPm"/>
+                                            <outlet property="titleLabel" destination="qeO-IM-dQp" id="1ig-BZ-pAL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Ucd-fb-pGY"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6gs-Q8-SCt"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -79,6 +99,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="eji-J2-IxA" id="UZs-sp-k9N"/>
+                        <outlet property="tableView" destination="cbd-0d-P7m" id="RZN-Ie-wzN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,11 +12,11 @@
 
 // Properties
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *rating;
+@property (nonatomic, copy) NSNumber *rating;
 @property (nonatomic, copy) NSString *overview;
 
 // Initializer
--(instancetype)initWithTitle:(NSString *)title rating:(NSString *)rating overview:(NSString *)overview;
+-(instancetype)initWithTitle:(NSString *)title rating:(NSNumber *)rating overview:(NSString *)overview;
 
 @end
 
