@@ -12,8 +12,14 @@
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *rating;
-@property (nonatomic, copy) NSString *summary;
+@property (nonatomic, copy) NSString *overview;
 
--(instancetype)initWithTitle:(NSString *)title rating:(NSString *)rating summary:(NSString *)summary;
+-(instancetype)initWithTitle:(NSString *)title rating:(NSString *)rating overview:(NSString *)overview;
+
+@end
+
+@interface TRMovie (JSONConvertable)
+
+-(instancetype)initWithDictionary:(NSDictionary<NSString *, id> *)dictionary;
 
 @end

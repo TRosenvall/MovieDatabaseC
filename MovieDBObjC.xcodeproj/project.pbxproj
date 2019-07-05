@@ -12,9 +12,9 @@
 		857921E422CF9F210044B2C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 857921E322CF9F210044B2C8 /* Assets.xcassets */; };
 		857921E722CF9F210044B2C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857921E522CF9F210044B2C8 /* LaunchScreen.storyboard */; };
 		857921EA22CF9F210044B2C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 857921E922CF9F210044B2C8 /* main.m */; };
-		857921F822CF9F9E0044B2C8 /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857921F722CF9F9E0044B2C8 /* NetworkController.m */; };
 		857921FB22CF9FEB0044B2C8 /* MovieDatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857921FA22CF9FEB0044B2C8 /* MovieDatabaseViewController.swift */; };
 		8579220222CFA21E0044B2C8 /* TRMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 8579220122CFA21E0044B2C8 /* TRMovie.m */; };
+		8579220522CFA6520044B2C8 /* TRNetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8579220422CFA6520044B2C8 /* TRNetworkController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,12 +26,12 @@
 		857921E622CF9F210044B2C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		857921E822CF9F210044B2C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		857921E922CF9F210044B2C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		857921F622CF9F9E0044B2C8 /* NetworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkController.h; sourceTree = "<group>"; };
-		857921F722CF9F9E0044B2C8 /* NetworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
 		857921F922CF9FEB0044B2C8 /* MovieDBObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieDBObjC-Bridging-Header.h"; sourceTree = "<group>"; };
 		857921FA22CF9FEB0044B2C8 /* MovieDatabaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDatabaseViewController.swift; sourceTree = "<group>"; };
 		8579220022CFA21E0044B2C8 /* TRMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRMovie.h; sourceTree = "<group>"; };
 		8579220122CFA21E0044B2C8 /* TRMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRMovie.m; sourceTree = "<group>"; };
+		8579220322CFA6520044B2C8 /* TRNetworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRNetworkController.h; sourceTree = "<group>"; };
+		8579220422CFA6520044B2C8 /* TRNetworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRNetworkController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 				857921F522CF9F7C0044B2C8 /* AnnimationControllers */,
 				857921F422CF9F600044B2C8 /* ModelControllers */,
 				857921F222CF9F4E0044B2C8 /* ViewControllers */,
-				857921F622CF9F9E0044B2C8 /* NetworkController.h */,
-				857921F722CF9F9E0044B2C8 /* NetworkController.m */,
+				8579220322CFA6520044B2C8 /* TRNetworkController.h */,
+				8579220422CFA6520044B2C8 /* TRNetworkController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -208,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				857921F822CF9F9E0044B2C8 /* NetworkController.m in Sources */,
+				8579220522CFA6520044B2C8 /* TRNetworkController.m in Sources */,
 				8579220222CFA21E0044B2C8 /* TRMovie.m in Sources */,
 				857921EA22CF9F210044B2C8 /* main.m in Sources */,
 				857921DC22CF9F200044B2C8 /* AppDelegate.m in Sources */,
